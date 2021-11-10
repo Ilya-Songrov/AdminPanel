@@ -48,7 +48,7 @@ ApplicationWindow {
         Rectangle{
             property string title: qsTr("Canceled orders")
             anchors.fill: parent
-            color: "#0d2530"
+            color: "coral"
         }
 
         Component.onCompleted: { sideBarAndStackWidgets.setActiveWidget(0); }

@@ -11,8 +11,7 @@ Item {
 
     Rectangle{
         anchors.fill: parent
-        color: "coral"
-        opacity: 0.5
+        color: "#0d2530"
     }
 
     RoundButton{
