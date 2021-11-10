@@ -1,0 +1,23 @@
+{
+    "example.png": {
+        "author_name": "example",
+        "author_link": "example",
+        "license": "example",
+        "site_download": "example",
+        "image_name": "example.png"
+    },
+    "iconfinder_2203532_card_credit_debit_payment_icon_512px.png": {
+        "author_name": "The Eyecons",
+        "author_link": "https://www.iconfinder.com/Icongnito",
+        "license": "Creative Commons (Attribution 3.0 Unported)",
+        "site_download": "https://www.iconfinder.com/icons/1348652/click_cursor_finger_gesture_hand_pointer_press_icon",
+        "image_name": "1348652_click_cursor_finger_gesture_hand_icon.png"
+    },
+    "example.png": {
+        "author_name": "SuperNdre",
+        "author_link": "https://www.iconfinder.com/andri_setiawan",
+        "license": "Creative Commons (Attribution 3.0 Unported)",
+        "site_download": "https://www.iconfinder.com/icons/6585312/checklist_document_list_menu_icon",
+        "image_name": "6585312_checklist_document_list_menu_icon.png"
+    }
+}

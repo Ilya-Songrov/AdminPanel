@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/otherImages">
+        <file>otherImages/1348652_click_cursor_finger_gesture_hand_icon.png</file>
+        <file>otherImages/6585312_checklist_document_list_menu_icon.png</file>
+    </qresource>
+</RCC>
