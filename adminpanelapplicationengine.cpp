@@ -31,8 +31,7 @@ void AdminPanelApplicationEngine::loadQml()
 #else
     const QUrl url(QStringLiteral("qrc:/qml/qml/main.qml"));
 #endif
-//    this->load(url);
-    this->load("/home/songrov/DeveloperRoot/Projects_Main/NewJob/AdminPanel/AdminPanel/resources/qml/main.qml");
+    this->load(url);
     if (this->rootObjects().isEmpty()){
         qCritical() << "Qml files were not loaded" << Qt::endl;
         emit exit(-1);
