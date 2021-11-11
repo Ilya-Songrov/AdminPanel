@@ -29,7 +29,7 @@ Item {
                 verticalAlignment: Qt.AlignVCenter
                 horizontalAlignment: Qt.AlignLeft
                 color: colorTextDark
-                text: "Admin-panel"
+                text: qsTr("Admin-panel")
             }
         }
     }

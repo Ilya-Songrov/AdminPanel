@@ -15,7 +15,7 @@ AdminPanelApplicationEngine::~AdminPanelApplicationEngine()
 
 void AdminPanelApplicationEngine::setConnections()
 {
-    connect(providerQml.get(), &ProviderQml::buttonLoadWasClicid, this, [](QString message){ qDebug() << "message:" << message << Qt::endl;});
+    connect(providerQml.get(), &ProviderQml::buttonLoadWasClicked, this, [](QString message){ qDebug() << "message:" << message << Qt::endl;});
 }
 
 void AdminPanelApplicationEngine::setQmlProperty()

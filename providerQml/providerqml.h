@@ -25,6 +25,6 @@ public:
     Q_INVOKABLE void emptySlot();
 
 signals:
-    void buttonLoadWasClicid(QString message);
+    void buttonLoadWasClicked(QString message);
 };
 

@@ -22,7 +22,7 @@ Item {
                 height: parent.height / 2
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
-                text: "Comeback"
+                text: qsTr("Comeback")
                 radius: Math.min(width, height) * 0.2
                 palette.button: "grey"
                 onClicked: buttonComebackWasCliced()
@@ -35,7 +35,7 @@ Item {
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignHCenter
             color: "red"
-            text: "Attention! All cells are occupied"
+            text: qsTr("Attention! All cells are occupied")
             visible: labelVisible
         }
     }

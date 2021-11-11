@@ -78,10 +78,10 @@ Item {
                     fontSizeMode: Text.Fit
                     font.pointSize: 222
                     wrapMode: Text.Wrap
-                    text: "Load completed order"
+                    text: qsTr("Load completed order")
                 }
             }
         }
-        onClicked: providerQml.buttonLoadWasClicid("Message")
+        onClicked: providerQml.buttonLoadWasClicked(qsTr("Message"))
     }
 }
