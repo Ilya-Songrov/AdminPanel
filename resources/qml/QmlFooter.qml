@@ -4,14 +4,14 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.12
 
 Item {
-    signal buttonComebackWasCliced()
+    signal buttonComebackWasClicked()
     property real widthSideBar: parent.width / 4
-    property bool labelVisible: false
+    property bool labelTextVisible: false
 
     RowLayout{
         width: parent.width
         height: parent.height
-        spacing: 0
+        spacing: -1
         Item {
             Layout.maximumWidth: widthSideBar
             Layout.minimumWidth: widthSideBar
@@ -21,11 +21,11 @@ Item {
                 width: parent.width * 0.9
                 height: parent.height / 2
                 anchors.verticalCenter: parent.verticalCenter
-                anchors.right: parent.right
-                text: qsTr("Comeback")
+                anchors.horizontalCenter: parent.horizontalCenter
                 radius: Math.min(width, height) * 0.2
-                palette.button: "grey"
-                onClicked: buttonComebackWasCliced()
+                palette.button: "#b0aba5"
+                text: qsTr("Comeback")
+                onClicked: buttonComebackWasClicked()
             }
         }
         Label{
@@ -34,10 +34,13 @@ Item {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignHCenter
-            color: "red"
-            text: qsTr("Attention! All cells are occupied")
-            visible: labelVisible
+            color: "#c72624"
+            font.bold: true
+            text: labelTextVisible ? qsTr("Attention! All cells are occupied") : ""
+            background: Rectangle{
+                anchors.fill: parent
+                color: "#d0cbc5"
+            }
         }
     }
-
 }

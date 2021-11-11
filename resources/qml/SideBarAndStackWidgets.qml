@@ -42,6 +42,24 @@ Item {
         clip: true
 
         headerPositioning: ListView.OverlayHeader
+        header: Rectangle {
+            id: header
+            z: 2
+            width: parent.width
+            height: 1
+            color: colorBackground
+            MenuSeparator {
+                parent: header
+                width: parent.width
+                anchors.verticalCenter: parent.bottom
+                visible: !listSideBar.atYBeginning
+                contentItem: Rectangle {
+                    implicitWidth: parent.width
+                    implicitHeight: 1
+                    color: "black"
+                }
+            }
+        }
         model: listNameWidgets
         delegate: ItemDelegate {
             id: itemDelegateRoot

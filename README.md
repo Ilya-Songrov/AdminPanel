@@ -1,6 +1,6 @@
 ## AdminPanel Qt/QML
 
-![Screen Shot](md/image_2021-11-10_16-25-33.png)
+![Screen Shot](md/image_2021-11-11_14-54-12.png)
 
 ## How to build (Qt 5.15.2)
 ```

@@ -31,7 +31,6 @@ ApplicationWindow {
         QmlTabActions {
             property string title: qsTr("Actions")
             anchors.fill: parent
-
         }
         Rectangle{
             property string title: qsTr("Current orders")
@@ -59,9 +58,9 @@ ApplicationWindow {
         width: parent.width
         height: rootWindow.heightHeaderFooter
         widthSideBar: sideBarAndStackWidgets.sideBar.width
-        labelVisible: sideBarAndStackWidgets.currentWidget === 0
-        onButtonComebackWasCliced: {
-            console.log("ButtonComebackWasCliced");
+        labelTextVisible: sideBarAndStackWidgets.currentWidget === 0
+        onButtonComebackWasClicked: {
+            console.log("ButtonComebackWasClicked");
             providerQml.emptySlot()
         }
     }

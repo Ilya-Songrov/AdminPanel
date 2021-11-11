@@ -11,7 +11,7 @@ Item {
 
     Rectangle{
         anchors.fill: parent
-        color: "#0d2530"
+        color: "#0d2531"
     }
 
     RoundButton{
@@ -19,7 +19,7 @@ Item {
         height: parent.height / 10
         anchors.centerIn: parent
         radius: height * 0.2
-        palette.button: "lightblue"
+        palette.button: "#a6c3cb"
 
         contentItem: Rectangle{
             anchors.fill: parent
@@ -42,7 +42,7 @@ Item {
 
                     Rectangle{
                         anchors.fill: parent
-                        color: "grey"
+                        color: colorBackgroundLight
                         radius: mask.radius
                         Image {
                             width: parent.width
@@ -70,7 +70,7 @@ Item {
                 Label{
                     Layout.fillWidth: true
                     Layout.fillHeight: true
-                    Layout.margins: Math.min(parent.width, parent.height) * 0.2
+                    Layout.margins: Math.min(parent.width, parent.height) * 0.3
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                     verticalAlignment: Qt.AlignVCenter
                     horizontalAlignment: Qt.AlignHCenter
